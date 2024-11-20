@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Quiz Container -->
+    <div id="quiz-container">
+        <header>Quiz Game</header>
+
+        <!-- Question Text -->
+        <div id="question-text">Question will appear here</div>
+
+        <!-- Options Container -->
+        <div id="options-container">
+            <button class="option-btn">Option 1</button>
+            <button class="option-btn">Option 2</button>
+            <button class="option-btn">Option 3</button>
+            <button class="option-btn">Option 4</button>
+        </div>
+
+        <!-- Next Button Container -->
+        <div id="next-btn-container">
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+        <!-- Restart Button (Visible after quiz ends) -->
+        <button id="restart-btn" onclick="restartQuiz()" style="display:none;">Restart Quiz</button>
+
+        <!-- Result Box (Visible after quiz ends) -->
+        <div id="result-box" style="display:none;">
+            <h2>Your Result</h2>
+            <p>Your score: <span id="score">0</span>/5</p>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
